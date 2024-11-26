@@ -1,26 +1,12 @@
-first = 567
-second = 321
-third = 987
-print(first, second, third)
-if first == second or first == third or second == third:
-    print(2)
-else:
-    print(0)
-
-first = 567
-second = 321
-third = 567
-print(first, second, third)
-if first == second or first == third or second == third:
-    print(2)
-else:
-    print(0)
-
-first = 567
-second = 567
-third = 567
-print(first, second, third)
-if first == second or first == third or second == third:
+first = int(input('Введите число: '))
+second = int(input('Введите число: '))
+third = int(input('Введите число: '))
+if first == second and second == third:
     print(3)
+elif first == second or first == third:
+    print(2)
+elif second == third:
+    print(2)
 else:
     print(0)
+
