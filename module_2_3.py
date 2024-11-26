@@ -9,3 +9,20 @@ while a < len(my_list) and my_list[a] >= 0:
 print(positive_num)
 a += 1
 
+
+fruts = ["apple", "banana", "cherry", "date", "", "fig", "grape"]
+Fruts_list = []
+i = 0
+while i < len(fruts) and fruts[i] != "":
+    if fruts[i] != "":
+        Fruts_list.append(fruts[i])
+    i += 1
+print(Fruts_list)
+i += 1
+
+u_list = ['apple', 'apricot', 'asparagus', 'nuts', '', 'cucumber', 'apelsin']
+up_list = []
+u = 0
+while u < len(u_list) and u_list[u].startswith("a"):
+    print(u_list[u])
+    u += 1
