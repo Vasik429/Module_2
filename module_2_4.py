@@ -20,3 +20,26 @@ for i in numbers:
         not_primes.append(i)
 print(primes)
 print(not_primes)
+
+# пробник (просто старалась разобраться и запомнить)
+# p.s. ненавижу математику
+num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
+pr = []
+np = []
+for a in num:
+    is_p = True
+    if a <= 1:
+        is_p = False
+    else:
+        for b in range(2, int(a**0.5) + 1):
+            if a % b == 0:
+                is_p = False
+                break
+    if is_p:
+        pr.append(a)
+    elif a == 1:
+        pass
+    else:
+        np.append(a)
+print(pr)
+print(np)
