@@ -1,17 +1,10 @@
-def save_key (key, values):
-    keys = {}
-    for key in range (3, 21):
-        for n in range (1, 21):
-            for r in range (20):
-                result = n + r
-                break
-        if result == key:
-            keys[key] = result
-        else:
-            pass
-keys =
-
-# for i in range (1, 21):
-#     for j in range (1, 20):
-#         print(i + j)
+for n in range (3, 21):
+    password = []
+    for i in range(1, 20):
+        for j in range(2, 20):
+            if n % (i + j):
+                while n >= (i + j) and n % (i + j):
+                    password.append(i)
+                    password.append(j)
+print(password)
 
